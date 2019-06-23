@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  text-align: center;
+  background: rgb(10,10,10);
+  width: 100vw;
+  height: 100vh;
+}
