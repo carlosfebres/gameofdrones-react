@@ -1,0 +1,19 @@
+.floating-box {
+    max-width: 400px;
+    border: 1px solid rgba(200, 200, 200, .3);
+    border-radius: 15px;
+    animation: shadow infinite 3s linear;
+    padding: 10px;
+    background: rgba(100, 100, 100, .4);
+    transform: translate(-50%, -50%);
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+}
+
+.horizontal-center {
+    position: absolute;
+    left: 50%;
+}

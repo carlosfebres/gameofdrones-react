@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {setGlobal} from 'reactn';
 import ReactDOM from 'react-dom';
 import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
+
+
+setGlobal({
+	nickname: null,
+	socket: null,
+	moves: [],
+	games: []
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
