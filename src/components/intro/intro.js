@@ -7,7 +7,7 @@ export default class Intro extends Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {nickname: ''};
+		this.state = {nickname: 'Carlos'};
 
 		this.handleChange = this.handleChange.bind(this);
 		this.startPlaying = this.startPlaying.bind(this);
@@ -18,7 +18,6 @@ export default class Intro extends Component {
 	}
 
 	startPlaying(event) {
-		alert(this.state.nickname);
 		this.setGlobal({nickname: this.state.nickname});
 		this.props.history.push('home');
 		event.preventDefault();
@@ -27,13 +26,13 @@ export default class Intro extends Component {
 	render() {
 		return (
 			<div className="intro-container">
-				<FloatingBox vertical="center" horizontal="center">
+				<FloatingBox>
 					<img className="logo" src={logo} alt="Logo"/>
 					<hr/>
 					<form onSubmit={this.startPlaying}>
 						<input type="text" placeholder="Nickname" value={this.state.nickname}
 							   onChange={this.handleChange}/>
-						<input type="submit" value="Play!"/>
+						<input className="play-button" type="submit" value="Play!"/>
 					</form>
 				</FloatingBox>
 			</div>

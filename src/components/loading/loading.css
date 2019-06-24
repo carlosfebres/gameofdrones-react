@@ -1,0 +1,11 @@
+.loading-image {
+    max-width: 100px;
+}
+
+.loading-title {
+    font-family: Cursive;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+    margin: 10px 0;
+}

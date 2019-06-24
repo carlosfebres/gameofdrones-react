@@ -5,7 +5,7 @@ export default class FloatingBox extends Component {
 	render() {
 		return (
 			<div
-				className={"floating-box " + (this.props.vertical === 'center' ? 'vertical-center ' : '') + (this.props.horizontal === 'center' ? 'horizontal-center' : '')}>
+				className={"floating-box"}>
 				{this.props.children}
 			</div>
 		);

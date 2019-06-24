@@ -3,3 +3,23 @@
     width: 80%;
     max-width: 600px;
 }
+p {
+    color: white;
+}
+
+.title {
+    font-family: Cursive;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.onlinePlayersTitle {
+  text-align: left;
+    color: green;
+}
+
+.noOnlinePlayers {
+    margin: 20px 0;
+    color: red;
+}

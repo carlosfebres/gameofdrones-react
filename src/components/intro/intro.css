@@ -1,6 +1,12 @@
-
 hr {
     margin: 10px 0;
+}
+
+.play-button {
+    background: #efa501;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
 }
 
 .logo {
@@ -14,6 +20,7 @@ input {
     border: 1px solid grey;
     padding: 8px;
     border-radius: 4px;
+    margin: 5px 0;
 }
 
 input + input {

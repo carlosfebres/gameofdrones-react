@@ -4,6 +4,7 @@ import IntroScreen from '../intro/intro'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import HomeScreen from "../home/home";
 import socketIOClient from "socket.io-client";
+import GameScreen from "../game/game";
 
 export default class App extends Component {
 
@@ -17,6 +18,7 @@ export default class App extends Component {
 				<div className="App">
 					<Route path="/home" component={HomeScreen}/>
 					<Route path="/" exact component={IntroScreen}/>
+					<Route path="/playing/:player" exact component={GameScreen}/>
 				</div>
 			</Router>
 		);
